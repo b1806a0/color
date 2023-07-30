@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 
 #日本語文字化け対策でフォント指定
-sns.set(font='Hiragino Sans')
+#sns.set(font='Hiragino Sans')
 plt.rcParams['font.family'] = "Hiragino Sans"
 
 def app():

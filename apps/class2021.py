@@ -15,14 +15,6 @@ def app():
     st.title("トレーニング結果")
 
 
-    #カラーチップのデータを読み込み辞書変換
-    cdf = pd.read_csv('ColorChip156.csv')
-    d_col = dict(zip(cdf['num'], cdf['#col']))
-
-    #カラーチップを表示        
-    #st.image("colorchip156.png", caption='156色カラーパレット') 
-
-
     #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
     choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "1"))
@@ -32,23 +24,6 @@ def app():
         st.write('1の結果を表示')
     if choose_id == 'ALL':
         st.write('ALLの結果を表示')
-
-
-
-    """ 
-    #分析へ移動
-    #箱ひげ図で全体の散らばりを見る
-    sns.catplot(data=df2, x="col_3a", y="kwd", kind="box",height=10, aspect=1.5, palette="coolwarm")
-    st.subheader("1〜156の選択色のキーワードごとの集中度")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
-    st.pyplot()
-    st.caption("*縦軸は選択色の番号")
-
-    #ヒートマップで全体の散らばりを見る
-    sns.displot(data=df2, x="col_3a", y="kwd",height=10, aspect=1.5)
-    st.subheader("同様に濃淡で示す")
-    st.pyplot()
-    """
 
 
     #kwd個別に切り出して可視化していく

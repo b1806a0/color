@@ -58,7 +58,7 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image("lovely.png")
+    st.image(data/"lovely.png")
         
     #2022選択時に表示
     if choose_id == '2022':

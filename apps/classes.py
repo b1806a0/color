@@ -14,7 +14,7 @@ def app():
 
     st.title("トレーニング結果 | Training Result")
 
-    #streamlitでの表示データのフィルタリング（まだ未装。とりあえず１を手動で作成。集計→表示を自動化できないと辛い。）
+    #streamlitでの表示データのフィルタリング（集計→表示を自動化できないと辛い。）
     choose_id = st.selectbox("表示するデータを選択して下さい", (
         "ALL", "2022", "2023"))
 
@@ -30,7 +30,7 @@ def app():
     #kwd個別に切り出して可視化していく
     
     #streamlit表示
-    st.header("Q1：愛らしい| Lovely)")
+    st.header("Q1：愛らしい| Lovely")
 
     #streamlitで選択色トップ５を表示
     st.subheader("上位選択色 | Top Colors")
@@ -58,7 +58,7 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image("airashii.treemap.bmp")
+    st.image("lovery.png")
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -86,12 +86,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("lovery-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -116,11 +116,11 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("lovery-2023.png")
     
     #streamlit表示
-    st.header("Q2：楽しい(fun)")
+    st.header("Q2：楽しい| Fun")
     
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -153,7 +153,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("tanoshii.treemap.png")  
+    st.image("fun.png")  
    
 
     #2022選択時に表示
@@ -182,12 +182,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("fun-2022.bmp")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -212,12 +212,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("fun-2023.bmp")
 
 
 
-    st.header("Q3：豪華な(gorgeous)")
+    st.header("Q3：豪華な | Gorgeous")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -249,7 +249,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("goukana.treemap.bmp")        
+    st.image("georgeous.png")        
         
         
     #2022選択時に表示
@@ -278,12 +278,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("georgeous-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -308,32 +308,17 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("geougeous-2023.png")
 
 
 
-    st.header("Q4：素朴な(simple)")
+    st.header("Q4：素朴な | Simple")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
-    with col1:
-        color = st.color_picker('Q4-1', '#DBDBDB')
-        st.write(color)
-    with col2:
-        color = st.color_picker('Q4-2', '#463700')
-        st.write(color)
-    with col3:
-        color = st.color_picker('Q4-3', '#FFF1E7')
-        st.write(color)
-    with col4:
-        color = st.color_picker('Q4-4', '#FFFFFF')
-        st.write(color)
-    with col5:
-        color = st.color_picker('Q4-5', '#656565')
-        st.write(color)
         
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -358,7 +343,7 @@ def app():
      
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
-    st.image("sobokuna.treemap.bmp")   
+    st.image("simple.png")
     
  
     #2022選択時に表示
@@ -387,12 +372,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("simple-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -417,33 +402,16 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("simple-2023.png")
 
         
 
-    st.header("Q5：味わい深い(tasteful)")
+    st.header("Q5：味わい深い | Tasteful")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
-    col1, col2, col3, col4, col5 = st.columns(5)
 
-    with col1:
-        color = st.color_picker('Q5-1', '#656565')
-        st.write(color)
-    with col2:
-        color = st.color_picker('Q5-2', '#A2A300')
-        st.write(color)
-    with col3:
-        color = st.color_picker('Q5-3', '#D35000')
-        st.write(color)
-    with col4:
-        color = st.color_picker('Q5-4', '#D37600')
-        st.write(color)
-    with col5:
-        color = st.color_picker('Q5-5', '#003232')
-        st.write(color)
-        
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
@@ -462,7 +430,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("ajiwai.treemap.bmp")        
+    st.image("tasteful.png") 
 
                    
     #2022選択時に表示
@@ -491,12 +459,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("tasteful-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -521,14 +489,11 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("tasteful-2023.png")
 
-                   
-                   
-                   
 
-    st.header("Q6：格調のある(dignified)")
+    st.header("Q6：格調のある | Dignified")
 
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
@@ -556,7 +521,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("kakucho.treemap.bmp")        
+    st.image("dignified.png")        
         
 
     #2022選択時に表示
@@ -585,12 +550,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("dignified-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -615,16 +580,11 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("dignified-2023.png")
+        
 
-                   
-                   
-
-
-    st.header("Q7：優雅な(graceful)")
- 
-
+    st.header("Q7：優雅な | Graceful")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4 = st.columns(4)
@@ -641,30 +601,14 @@ def app():
     with col4:
         color = st.color_picker('Q7-4', '#87EAFF')
         st.write(color)
-                                
+
+    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+    st.subheader("トレーニング参加者全体の選択色")
+    st.image("graceful.png")    
+    
     col1, col2, col3, col4 = st.columns(4)
 
-    with col1:
-        color = st.color_picker('Q7-5', '#7F00D4')
-        st.write(color)
-    with col2:
-        color = st.color_picker('Q7-6', '#750000')
-        st.write(color)
-    with col3:
-        color = st.color_picker('Q7-7', '#B9BFFF')
-        st.write(color)
-    with col4:
-        color = st.color_picker('Q7-8', '#58B1FF')
-        st.write(color)                               
-                                
-                               
-        
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")    
-    st.image("yuuga.treemap.bmp")
-    
-
-    #2022選択時に表示
+   #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
@@ -690,12 +634,11 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
-
-
-    #2023選択時に表示
-    if choose_id == '1':
+        st.subheader("2022")
+        st.image("graceful-2022.png")
+        
+   #2023選択時に表示
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -720,15 +663,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
-
-                   
-                   
+        st.subheader("2023")
+        st.image("graceful-2023.png")                            
+                                
 
     #!(8) 気品のある
-
-    st.header("Q8：気品のある(elegant)")
+    st.header("Q8：気品のある | Elegant")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -755,7 +695,7 @@ def app():
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("kihin.treemap.bmp") 
+    st.image("elegant.png") 
 
 
     #2022選択時に表示
@@ -784,12 +724,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("elegant-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -814,15 +754,13 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("elegant-2023.png")
 
                   
                   
 
-    st.header("Q9：合理的な(reasonable)")
-
-
+    st.header("Q9：合理的な | Reasonable")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
@@ -852,7 +790,7 @@ def app():
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("gouriteki.treemap.bmp")
+    st.image("reasonable.png")
         
         
     #2022選択時に表示
@@ -882,11 +820,11 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.image("reasonable-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -911,15 +849,13 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("reasonoable-2023.png")
 
 
 
 
-    st.header("Q10：春(spring)")
-
-
+    st.header("Q10：春 | Spring")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -943,7 +879,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("spring.treemap.bmp")        
+    st.image("spring.png")        
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -971,12 +907,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("spring-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1001,16 +937,14 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("spring-2023.png")
      
 
                                 
                                 
 
-    st.header("Q11：夏(summer)")
-
-
+    st.header("Q11：夏 | Summer")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -1036,7 +970,7 @@ def app():
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("summer.treemap.bmp")
+    st.image("summer.")png
 
 
     #2022選択時に表示
@@ -1065,12 +999,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("summer-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1095,15 +1029,13 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("summer-2023.png")
     
 
                                 
 
-    st.header("Q12：秋(autumn)")
-
-
+    st.header("Q12：秋 | Autumn")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -1129,7 +1061,7 @@ def app():
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("autumn.treemap.bmp")
+    st.image("autumn.png")
         
         
     #2022選択時に表示
@@ -1158,12 +1090,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("autumn-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1188,16 +1120,14 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("autumn-2023.png")
      
 
                                 
                                 
 
-    st.header("Q13：冬(winter)")
-
-
+    st.header("Q13：冬 | Winter")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -1223,7 +1153,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
-    st.image("winter.treemap.bmp")
+    st.image("winter.png")
         
         
     #2022選択時に表示
@@ -1252,12 +1182,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("winger-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1282,18 +1212,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("winter-2023.png")
  
 
     #!朝(morning)
-    df_morning = df[df['kwd'] == 'morning']
-
-    df_morning_count = df_morning[['count',"col_sum"]].groupby("col_sum").count()
-
-    df_morning_count.plot.bar(by=["col_sum", "count"], xlabel="選択色", ylabel="選択数", figsize=(10, 5),legend=False);
-
-    st.header("Q14：朝(morning)")
+    st.header("Q14：朝 | Morning")
 
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
@@ -1322,11 +1246,9 @@ def app():
         color = st.color_picker('Q14-7', '#FFB954')
         st.write(color)                                
 
-
-
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("morning.treemap.bmp")
+    st.image("morning.png")
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1354,12 +1276,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("morning-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1384,13 +1306,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("morning-2023.png")
       
 
     
-    st.header("Q15：昼(midday)")
-
+    st.header("Q15：昼 | Midday")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -1412,10 +1333,9 @@ def app():
         color = st.color_picker('Q15-5', '#FFFF00')
         st.write(color)   
 
-
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("midday.treemap.bmp")        
+    st.image("afternoon.treemap.bmp")        
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1444,11 +1364,11 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.image("afternoon-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1473,15 +1393,14 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("afternoon-2023.png")
 
 
  
-                                
-
+                    
                  
-    st.header("Q16：夕(sunset)")
+    st.header("Q16：夕 | Sunset")
 
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
@@ -1507,8 +1426,8 @@ def app():
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("sunset.treemap.bmp")        
-        
+    st.image("sunset.png") 
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
@@ -1535,12 +1454,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("sunset-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1565,14 +1484,13 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("sunset-2023.png")
      
 
 
     
-    st.header("Q17：夜(night)")
-
+    st.header("Q17：夜 | Night")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -1596,7 +1514,7 @@ def app():
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("night.treemap.bmp")
+    st.image("night.png")
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1624,12 +1542,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("night-2022.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1654,16 +1572,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2023")
+        st.image("night-2023.png")
 
                   
-
-                                
-
-    st.header("Q18：好きな色(favorite)")
-
-
+                            
+    st.header("Q18：好きな色 | Favorite")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -1686,7 +1600,7 @@ def app():
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("favorite.treemap.bmp") 
+    st.image("favorite.png") 
 
     #2022選択時に表示
     if choose_id == '2022':
@@ -1714,12 +1628,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2022 All")
-        st.image("airashii.treemap.bmp")
+        st.subheader("2022")
+        st.image("favorite.png")
 
 
     #2023選択時に表示
-    if choose_id == '1':
+    if choose_id == '2023':
         st.subheader("2023 Top Colors")   
         col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -1744,20 +1658,12 @@ def app():
             st.write(color)
 
         #PBIで作成したツリーマップの画像
-        st.subheader("2023 All")
-        st.image("airashii.treemap.bmp")
- 
+        st.subheader("2023")
+        st.image("favorite-2023.png")
 
-    #1選択時に追加で表示（とりあえずテスト。本当は自動化したい）
-    if choose_id == '1':
-        st.subheader("あなたの選択した３色")   
-        st.text("指定されていません。")
-                  
                   
 
-    st.header("Q19：地元(hometown)")
-
-
+    st.header("Q19：地元 | hometown")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -1778,9 +1684,12 @@ def app():
         color = st.color_picker('Q19-5', '#91FF85')
         st.write(color) 
 
+
+    
+    """
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("hometown.treemap.bmp") 
+    st.image("hometown.png") 
 
 
     #2022選択時に表示
@@ -1842,12 +1751,9 @@ def app():
         st.subheader("2023 All")
         st.image("airashii.treemap.bmp")
 
-
-
-
+    
     
     st.header("Q20：国・地域(nation)")
-
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
     st.subheader("上位選択色")
@@ -1932,5 +1838,5 @@ def app():
         #PBIで作成したツリーマップの画像
         st.subheader("2023 All")
         st.image("airashii.treemap.bmp")
-
+"""
 

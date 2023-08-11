@@ -58,7 +58,7 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image("lovery.png")
+    st.image("lovely.png")
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -87,7 +87,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("lovery-2022.png")
+        st.image("loveiy-2022.png")
 
 
     #2023選択時に表示
@@ -117,7 +117,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("lovery-2023.png")
+        st.image("loveiy-2023.png")
     
     #streamlit表示
     st.header("Q2：楽しい| Fun")

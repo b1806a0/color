@@ -59,7 +59,7 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image(opnen.data("lovely.png"))
+    st.image(opnen.data("lovery.png"))
 
     #from PIL import Image
    # image = Image.open(data/'lovely.png')

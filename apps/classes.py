@@ -5,6 +5,7 @@ import os
 #import seaborn as sns
 import streamlit as st
 #import japanize_matplotlib
+from PIL import Image
 
 def app():
 
@@ -58,7 +59,11 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image(opnen.data("lovely.png"))
+    #st.image(opnen.data("lovely.png"))
+
+    from PIL import Image
+    image = Image.open('lovely.png')
+    st.image(image)
         
     #2022選択時に表示
     if choose_id == '2022':

@@ -254,7 +254,7 @@ def app():
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("georgeous.png")        
+    st.image("gorgeous.png")        
         
         
     #2022選択時に表示
@@ -284,7 +284,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("georgeous-2022.png")
+        st.image("gorgeous-2022.png")
 
 
     #2023選択時に表示
@@ -314,7 +314,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("geougeous-2023.png")
+        st.image("gorgeous-2023.png")
 
 
 

@@ -970,7 +970,7 @@ def app():
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("summer.")png
+    st.image("summer.png")
 
 
     #2022選択時に表示

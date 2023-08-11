@@ -62,7 +62,7 @@ def app():
     #st.image(opnen.data("lovely.png"))
 
     from PIL import Image
-    image = Image.open('lovely.png')
+    image = Image.open(data/'lovely.png')
     st.image(image)
         
     #2022選択時に表示

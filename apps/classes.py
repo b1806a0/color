@@ -45,28 +45,24 @@ def app():
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FF88D5')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFB9B8')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFEBF6')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FF8A89')
             st.write(color)
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
     st.image("lovely.png")
-
-    #from PIL import Image
-   # image = Image.open(data/'lovely.png')
-    #st.image(image)
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -82,18 +78,15 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF58C4')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF88D5')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
-            st.write(color)
-
-        #PBIで作成したツリーマップの画像
+            color = st.color_picker('Q1-5', '#FFB9B8')
         st.subheader("2022")
         st.image("lovely-2022.png")
 
@@ -116,7 +109,7 @@ def app():
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFE8F6')
             st.write(color)
     
         with col5:
@@ -134,7 +127,7 @@ def app():
     #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
             color = st.color_picker('Q2-1', '#FFFF26')
@@ -145,21 +138,16 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q2-3', '#FF6100')
+            color = st.color_picker('Q2-3', '#FF9000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q2-4', '#FFB954')
+            color = st.color_picker('Q2-4', '#FFFF4C')
             st.write(color)
         with col5:
             color = st.color_picker('Q2-5', '#FF7F1A')
             st.write(color)
-        with col6:
-            color = st.color_picker('Q2-6', '#FFA511')
-            st.write(color)
-        with col7:
-            color = st.color_picker('Q2-7', '#FF0000')
-            st.write(color)       
+     
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
@@ -172,23 +160,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFF26')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFF00')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF6100')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF9000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FF7F1A')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -202,23 +190,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFF00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFF26')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFFF4C')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF9000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FF7F)1A
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -233,30 +221,25 @@ def app():
     #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
     
         with col1:
             color = st.color_picker('Q3-1', '#FF0000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q3-2', '#FFFF00')
+            color = st.color_picker('Q3-2', '#000000')
             st.write(color)
         with col3:
-            color = st.color_picker('Q3-3', '#FF00A2')
+            color = st.color_picker('Q3-3', '#A40000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q3-4', '#000000')
+            color = st.color_picker('Q3-4', '#AD15FF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q3-5', '#FFFF26')
+            color = st.color_picker('Q3-5', '#QB00FF')
             st.write(color)       
-        with col6:
-            color = st.color_picker('Q4-6', '#FF2A22')
-            st.write(color)
-        with col7:
-            color = st.color_picker('Q4-7', '#D30000')
-            st.write(color)   
+
             
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -270,23 +253,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FF0000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFF00')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF00A2')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#000000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#D30000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -300,23 +283,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFF00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#D40000')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF0000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#460076')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#000000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -333,27 +316,22 @@ def app():
         st.subheader("上位選択色")
         col1, col2, col3, col4, col5 = st.columns(5)
     
-            
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
-    
         with col1:
-            color = st.color_picker('Q4-6', '#FFD4B7')
+            color = st.color_picker('Q4-1', '#DBDBDB
             st.write(color)
         with col2:
-            color = st.color_picker('Q4-7', '#FFF1B6')
+            color = st.color_picker('Q4-2', '#B2B2B2')
             st.write(color)
         with col3:
-            color = st.color_picker('Q4-8', '#EAFFB6')
+            color = st.color_picker('Q4-3', '#7F7F7F')
             st.write(color)
         with col4:
-            color = st.color_picker('Q4-9', '#B2B2B2')
+            color = st.color_picker('Q4-4', '#463700')
             st.write(color)       
         with col5:
-            color = st.color_picker('Q4-10', '#656565')
+            color = st.color_picker('Q4-5', '#F8FFE7
             st.write(color)
-        with col6:
-            color = st.color_picker('Q4-11', '#656500')
-            st.write(color)
+
      
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
@@ -366,23 +344,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', DBDBDB
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFF1E7')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFFFFF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#656500')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#464700')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -396,23 +374,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#DBDBDB')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFCEB6')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#A6A6A6')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#7F7F7F')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#A38000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -427,21 +405,23 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q5-1', '#A43E00')
+            color = st.color_picker('Q5-1', '#A35C00')
             st.write(color)
         with col2:
-            color = st.color_picker('Q5-2', '#A38000')
+            color = st.color_picker('Q5-2', '#A2A300')
             st.write(color)
         with col3:
-            color = st.color_picker('Q5-3', '#650000')
+            color = st.color_picker('Q5-3', '#A38000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q5-4', '#003232')
+            color = st.color_picker('Q5-4', '#750000')
             st.write(color)
- 
+        with col5:
+            color = st.color_picker('Q5-4', '#470000')
+            st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
     st.subheader("トレーニング参加者全体の選択色")
@@ -454,23 +434,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A35C00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#A2A300')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF0000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#D35000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#D37600')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -484,23 +464,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A35C00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#507500')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#651900')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#003200')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#A40000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -517,22 +497,22 @@ def app():
         col1, col2, col3, col4, col5, col6 = st.columns(6)
     
         with col1:
-            color = st.color_picker('Q6-1', '#FFFF00')
+            color = st.color_picker('Q6-1', '#460076')
             st.write(color)
         with col2:
-            color = st.color_picker('Q6-2', '#D1D300')
+            color = st.color_picker('Q6-2', '#6400A5')
             st.write(color)
         with col3:
             color = st.color_picker('Q6-3', '#650000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q6-4', '#D30000')
+            color = st.color_picker('Q6-4', '#2A0047')
             st.write(color)
         with col5:
-            color = st.color_picker('Q6-5', '#A40000')
+            color = st.color_picker('Q6-5', '#000032')
             st.write(color)        
         with col6:
-            color = st.color_picker('Q6-6', '#750000')
+            color = st.color_picker('Q6-6', '#000000')
             st.write(color)
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -546,23 +526,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFF00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#D1D300')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#D300000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#A40000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#650000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -576,23 +556,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A40000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#460076')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#6300A5')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#2A0047')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#000032')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -605,25 +585,27 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
-            color = st.color_picker('Q7-1', '#A40066')
+            color = st.color_picker('Q7-1', '#E4B7FF')
             st.write(color)
         with col2:
-            color = st.color_picker('Q7-2', '#FFFFFF')
+            color = st.color_picker('Q7-2', '#7F00D4')
             st.write(color)
         with col3:
-            color = st.color_picker('Q7-3', '#E4B7FF')
+            color = st.color_picker('Q7-3', '#A40066')
             st.write(color)
         with col4:
-            color = st.color_picker('Q7-4', '#87EAFF')
+            color = st.color_picker('Q7-4', '#750049')
             st.write(color)
-
+        with col5:
+            color = st.color_picker('Q7-5', '#A40000')
+            st.write(color)
+            
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
     st.image("graceful.png")    
     
-    col1, col2, col3, col4 = st.columns(4)
 
    #2022選択時に表示
     if choose_id == '2022':
@@ -631,23 +613,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A40066')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFFFF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#E4B7FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#7F00D4')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#750000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -660,23 +642,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A40000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#7F00D4')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#750049')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#E4B7FF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#D287FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -690,26 +672,24 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q8-1', '#FFFFFF')
+            color = st.color_picker('Q8-1', '#460076')
             st.write(color)
         with col2:
             color = st.color_picker('Q8-2', '#750049')
             st.write(color)
         with col3:
-            color = st.color_picker('Q8-3', '#460076')
+            color = st.color_picker('Q8-3', '#6300A5')
             st.write(color)
         with col4:
-            color = st.color_picker('Q8-4', '#BF55FF')
+            color = st.color_picker('Q8-4', '#320065')
             st.write(color)
         with col5:
-            color = st.color_picker('Q8-5', '#FFFFB5')
+            color = st.color_picker('Q8-5', '#9B00FF')
             st.write(color)                                   
-        with col6:
-            color = st.color_picker('Q8-6', '#000000')
-            st.write(color)    
+
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -722,23 +702,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#460076')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#BF55FF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#750049')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#320065')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFFB5')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -752,23 +732,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#6300A5')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#460076')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#750049')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#0000A5')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#9B00FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -783,29 +763,24 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q9-1', '#0000D5')
+            color = st.color_picker('Q9-1', '#000000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q9-2', '#000000')
+            color = st.color_picker('Q9-2', '#0000FF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q9-3', '#FF2A22')
+            color = st.color_picker('Q9-3', '#0000D5')
             st.write(color)
         with col4:
-            color = st.color_picker('Q9-4', '#FFFFFF')
+            color = st.color_picker('Q9-4', '#323232')
             st.write(color)                            
         with col5:
-            color = st.color_picker('Q9-5', '#FFFF00')
+            color = st.color_picker('Q9-5', '#58B1FF')
             st.write(color) 
-        with col6:
-            color = st.color_picker('Q9-6', '#0085FF')
-            st.write(color)
-        with col7:
-            color = st.color_picker('Q9-7', '#7F7F7F')
-            st.write(color)                                
+     
        
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -819,23 +794,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#000000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#0000D5')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF2A22')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFFFFF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFF00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -849,23 +824,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#000000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#0000FF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#2A37FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#656565')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#323232')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -886,16 +861,16 @@ def app():
             color = st.color_picker('Q10-1', '#FFB8E6')
             st.write(color)
         with col2:
-            color = st.color_picker('Q10-2', '#FFE8F6')
+            color = st.color_picker('Q10-2', '#BDFFB6')
             st.write(color)
         with col3:
-            color = st.color_picker('Q10-3', '#FFFFB5')
+            color = st.color_picker('Q10-3', '#FFE8F6')
             st.write(color)
         with col4:
             color = st.color_picker('Q10-4', '#FFB9B8')
             st.write(color)
         with col5:
-            color = st.color_picker('Q10-5', '#BDFFB6')
+            color = st.color_picker('Q10-5', '#FFFFB5')
             st.write(color) 
 
         
@@ -917,7 +892,7 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFFFB5')
             st.write(color)
     
         with col4:
@@ -925,7 +900,7 @@ def app():
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#BDFFB6')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -943,19 +918,19 @@ def app():
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#BDFFB6')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFB9B8')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFE8F6')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFFB5')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -968,26 +943,24 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q11-1', '#FFFF00')
+            color = st.color_picker('Q11-1', '#FF0000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q11-2', '#00CFFF')
+            color = st.color_picker('Q11-2', '#17D9FF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q11-3', '#17D9FF')
+            color = st.color_picker('Q11-3', '#55E1FF')
             st.write(color)
         with col4:
             color = st.color_picker('Q11-4', '#55E1FF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q11-5', '#FF0000')
+            color = st.color_picker('Q11-5', '#00CFFF')
             st.write(color)                            
-        with col6:
-            color = st.color_picker('Q11-6', '#FF6100')
-            st.write(color) 
+
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -1000,23 +973,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#17D9FF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFF00')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#00CFFF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#55E1FF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FF0000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1030,23 +1003,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FF0000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#55E1FF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#17D9FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#00CFFF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#0000FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1060,13 +1033,13 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q12-1', '#A35C00')
+            color = st.color_picker('Q12-1', '#D37600')
             st.write(color)
         with col2:
-            color = st.color_picker('Q12-2', '#D37600')
+            color = st.color_picker('Q12-2', '#A35C00')
             st.write(color)
         with col3:
             color = st.color_picker('Q12-3', '#A43E00')
@@ -1075,11 +1048,9 @@ def app():
             color = st.color_picker('Q12-4', '#A40000')
             st.write(color)
         with col5:
-            color = st.color_picker('Q12-5', '#750000')
+            color = st.color_picker('Q12-5', '#D35000')
             st.write(color) 
-        with col6:
-            color = st.color_picker('Q12-6', '#755C00')
-            st.write(color) 
+
                                 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -1092,23 +1063,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#A35C00')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#D37600')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#A43E00')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#A40000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#750000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1122,23 +1093,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#D37600')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#A40000')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#A43E00')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#D35000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#653200')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1152,26 +1123,24 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q13-1', '#FFFFFF')
+            color = st.color_picker('Q13-1', '#')DBDBDB
             st.write(color)
         with col2:
-            color = st.color_picker('Q13-2', '#0055A4')
+            color = st.color_picker('Q13-2', '#B7F2FF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q13-3', '#DBDBDB')
+            color = st.color_picker('Q13-3', '#BBDEFF')
             st.write(color)
         with col4:
             color = st.color_picker('Q13-4', '#000347')
             st.write(color)
         with col5:
-            color = st.color_picker('Q13-5', '#E7FBFF')
+            color = st.color_picker('Q13-5', '#0055A4')
             st.write(color)   
-        with col6:
-            color = st.color_picker('Q13-5', '#B7F2FF')
-            st.write(color)   
+   
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")    
@@ -1184,23 +1153,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFFFF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#DBDBDB')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#000347')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#E7FBFF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#B7F2FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1214,23 +1183,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFFFFF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#DBDBDB')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#E8F4FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#B7F2FF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#E7FBFF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1244,29 +1213,24 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
             color = st.color_picker('Q14-1', '#B7F2FF')
             st.write(color)
         with col2:
-            color = st.color_picker('Q14-2', '#E7FBFF')
+            color = st.color_picker('Q14-2', '#FFFFB5')
             st.write(color)
         with col3:
-            color = st.color_picker('Q14-3', '#FFFFB5')
+            color = st.color_picker('Q14-3', '#E7FB77')
             st.write(color)
         with col4:
-            color = st.color_picker('Q14-4', '#FF2A22')
+            color = st.color_picker('Q14-4', '#FFFF83')
             st.write(color)
         with col5:
             color = st.color_picker('Q14-5', '#FFF1B6')
             st.write(color)   
-        with col6:
-            color = st.color_picker('Q14-6', '#FF9B56')
-            st.write(color)
-        with col7:
-            color = st.color_picker('Q14-7', '#FFB954')
-            st.write(color)                                
+           
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -1278,23 +1242,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#B7F2FF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#E7FBFF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FFFFB5')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFF1B6')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFB954')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1308,23 +1272,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#B7F2FF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFFB5')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#B7FBFF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FFFF83')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFF1B6')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1341,19 +1305,19 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q15-1', '#FF9000')
+            color = st.color_picker('Q15-1', '#FFA511')
             st.write(color)
         with col2:
-            color = st.color_picker('Q15-2', '#FFFF83')
+            color = st.color_picker('Q15-2', '#FF6100')
             st.write(color)
         with col3:
-            color = st.color_picker('Q15-3', '#FF7F1A')
+            color = st.color_picker('Q15-3', '#FFFF00')
             st.write(color)
         with col4:
-            color = st.color_picker('Q15-4', '#FF6100')
+            color = st.color_picker('Q15-4', '#FF7F1A')
             st.write(color)
         with col5:
-            color = st.color_picker('Q15-5', '#FFFF00')
+            color = st.color_picker('Q15-5', '#FF0000')
             st.write(color)   
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -1366,23 +1330,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FF9000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFFF83')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF7F1A')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF6100')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFF00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1396,23 +1360,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FFA511')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#55E1FF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF0000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF6100')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFF00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1432,16 +1396,16 @@ def app():
             color = st.color_picker('Q16-1', '#FF6100')
             st.write(color)
         with col2:
-            color = st.color_picker('Q16-2', '#D35000')
+            color = st.color_picker('Q16-2', '#FF9000')
             st.write(color)
         with col3:
-            color = st.color_picker('Q16-3', '#FF9000')
+            color = st.color_picker('Q16-3', '#D35000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q16-4', '#D37600')
+            color = st.color_picker('Q16-4', '#FF7F1A')
             st.write(color)
         with col5:
-            color = st.color_picker('Q16-5', '#FFA511')
+            color = st.color_picker('Q16-5', '#D37600')
             st.write(color) 
 
 
@@ -1455,23 +1419,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FF6100')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FF9000')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#D35000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#FF7F1A')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#D37600')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1485,23 +1449,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#FF6100')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FF7F1A')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#FF9000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#D35000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FF2A22')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1529,7 +1493,7 @@ def app():
             color = st.color_picker('Q17-4', '#000276')
             st.write(color)
         with col5:
-            color = st.color_picker('Q17-5', '#FFFF00')
+            color = st.color_picker('Q17-5', '#000065')
             st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -1542,23 +1506,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#000000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#000347')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#000032')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#000276')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFF00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1572,23 +1536,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#000000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#000347')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#000065')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#000276')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#FFFF00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1605,19 +1569,19 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q18-1', '#FFB8E6')
+            color = st.color_picker('Q18-1', '#000000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q18-2', '#FFFFFF')
+            color = st.color_picker('Q18-2', '#B7F2FF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q18-3', '#000000')
+            color = st.color_picker('Q18-3', '#B8DEFF')
             st.write(color)
         with col4:
-            color = st.color_picker('Q18-4', '#E4B7FF')
+            color = st.color_picker('Q18-4', '#88C8FF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q18-5', '#55E1FF')
+            color = st.color_picker('Q18-5', '#B9BFFF')
             st.write(color) 
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
@@ -1630,23 +1594,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#000000')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#FFB8E6')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#E4B7FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#89BFFF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#88C8FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
@@ -1660,23 +1624,23 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q1-1', '#FFB8E6')
+            color = st.color_picker('Q1-1', '#B7F2FF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('Q1-2', '#FFE8F6')
+            color = st.color_picker('Q1-2', '#B8DEFF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('Q1-3', '#FF88D5')
+            color = st.color_picker('Q1-3', '#E4B7FF')
             st.write(color)
     
         with col4:
-            color = st.color_picker('Q1-4', '#FFB9B8')
+            color = st.color_picker('Q1-4', '#000000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('Q1-5', '#FF58C4')
+            color = st.color_picker('Q1-5', '#87EAFF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像

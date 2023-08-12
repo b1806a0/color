@@ -344,7 +344,7 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('22-Q1-1', DBDBDB
+            color = st.color_picker('22-Q1-1', '#DBDBDB')
             st.write(color)
     
         with col2:

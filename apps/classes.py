@@ -840,7 +840,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("reasonoable-2023.png")
+        st.image("reasonable-2023.png")
 
 
 

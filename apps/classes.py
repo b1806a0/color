@@ -1171,7 +1171,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("winger-2022.png")
+        st.image("winter-2022.png")
 
 
     #2023選択時に表示

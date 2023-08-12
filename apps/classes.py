@@ -60,9 +60,9 @@ def app():
             color = st.color_picker('Q1-5', '#FF8A89')
             st.write(color)
             
-    #PBIで作成したツリーマップの画像
-    st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image("lovely.png")
+        #PBIで作成したツリーマップの画像
+        st.subheader("トレーニング参加者全体の選択色 | All")
+        st.image("lovely.png")
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -87,6 +87,7 @@ def app():
     
         with col5:
             color = st.color_picker('22-Q1-5', '#FFB9B8')
+
         st.subheader("2022")
         st.image("lovely-2022.png")
 
@@ -148,11 +149,10 @@ def app():
             color = st.color_picker('Q2-5', '#FF7F1A')
             st.write(color)
      
-        
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("fun.png")  
-   
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("fun.png")  
+       
 
     #2022選択時に表示
     if choose_id == '2022':
@@ -239,13 +239,11 @@ def app():
         with col5:
             color = st.color_picker('Q3-5', '#9B00FF')
             st.write(color)       
-
+  
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("gorgeous.png")        
             
-        
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("gorgeous.png")        
-        
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -333,10 +331,10 @@ def app():
             st.write(color)
 
      
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")    
-    st.image("simple.png")
-    
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")    
+        st.image("simple.png")
+        
  
     #2022選択時に表示
     if choose_id == '2022':
@@ -423,9 +421,9 @@ def app():
             color = st.color_picker('Q5-4', '#470000')
             st.write(color)
         
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("tasteful.png") 
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("tasteful.png") 
 
                    
     #2022選択時に表示
@@ -513,10 +511,10 @@ def app():
             st.write(color)        
 
         
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("dignified.png")        
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("dignified.png")        
+            
 
     #2022選択時に表示
     if choose_id == '2022':
@@ -600,10 +598,10 @@ def app():
             color = st.color_picker('Q7-5', '#A40000')
             st.write(color)
             
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("graceful.png")    
-    
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("graceful.png")    
+        
 
    #2022選択時に表示
     if choose_id == '2022':
@@ -689,9 +687,9 @@ def app():
             st.write(color)                                   
 
                                 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("elegant.png") 
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("elegant.png") 
 
 
     #2022選択時に表示
@@ -780,11 +778,10 @@ def app():
             st.write(color) 
      
        
-
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("reasonable.png")
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("reasonable.png")
+            
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -872,10 +869,12 @@ def app():
             st.write(color) 
 
         
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("spring.png")        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("spring.png")        
         
+ 
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
@@ -960,9 +959,9 @@ def app():
             st.write(color)                            
 
                                 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("summer.png")
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("summer.png")
 
 
     #2022選択時に表示
@@ -1050,10 +1049,10 @@ def app():
             st.write(color) 
 
                                 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("autumn.png")
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("autumn.png")
+            
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1140,10 +1139,10 @@ def app():
             st.write(color)   
    
         
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")    
-    st.image("winter.png")
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")    
+        st.image("winter.png")
+            
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1230,10 +1229,12 @@ def app():
             st.write(color)   
            
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("morning.png")
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("morning.png")
+
+
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
@@ -1318,10 +1319,12 @@ def app():
             color = st.color_picker('Q15-5', '#FF0000')
             st.write(color)   
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("midday.png")        
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("midday.png")        
+
+
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
@@ -1407,9 +1410,11 @@ def app():
             st.write(color) 
 
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("sunset.png") 
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("sunset.png") 
+        
+ 
     
     #2022選択時に表示
     if choose_id == '2022':
@@ -1494,10 +1499,12 @@ def app():
             color = st.color_picker('Q17-5', '#000065')
             st.write(color) 
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("night.png")
-        
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("night.png")
+
+
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   
@@ -1582,10 +1589,12 @@ def app():
             color = st.color_picker('Q18-5', '#B9BFFF')
             st.write(color) 
 
-    #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
-    st.subheader("トレーニング参加者全体の選択色")
-    st.image("favorite.png") 
+        #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
+        st.subheader("トレーニング参加者全体の選択色")
+        st.image("favorite.png") 
 
+
+    
     #2022選択時に表示
     if choose_id == '2022':
         st.subheader("2022 Top Colors")   

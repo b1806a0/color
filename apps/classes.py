@@ -181,7 +181,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("fun-2022.bmp")
+        st.image("fun-2022.png")
 
 
     #2023選択時に表示
@@ -211,7 +211,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("fun-2023.bmp")
+        st.image("fun-2023.png")
 
 
 

@@ -33,7 +33,10 @@ def app():
     #streamlit表示
     st.header("Q1：愛らしい| Lovely")
 
+    
     #streamlitで選択色トップ５を表示
+    #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色 | Top Colors")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -59,7 +62,7 @@ def app():
             
     #PBIで作成したツリーマップの画像
     st.subheader("トレーニング参加者全体の選択色 | All")
-    st.image("lovery.png")
+    st.image("lovely.png")
 
     #from PIL import Image
    # image = Image.open(data/'lovely.png')
@@ -128,6 +131,8 @@ def app():
     st.header("Q2：楽しい| Fun")
     
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+    #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
@@ -225,6 +230,8 @@ def app():
     st.header("Q3：豪華な | Gorgeous")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+    #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
@@ -321,6 +328,8 @@ def app():
     st.header("Q4：素朴な | Simple")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -415,8 +424,9 @@ def app():
     st.header("Q5：味わい深い | Tasteful")
 
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
-
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
@@ -500,8 +510,9 @@ def app():
 
     st.header("Q6：格調のある | Dignified")
 
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -591,6 +602,8 @@ def app():
 
     st.header("Q7：優雅な | Graceful")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4 = st.columns(4)
 
@@ -674,8 +687,9 @@ def app():
 
     #!(8) 気品のある
     st.header("Q8：気品のある | Elegant")
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -767,6 +781,8 @@ def app():
 
     st.header("Q9：合理的な | Reasonable")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
@@ -862,6 +878,8 @@ def app():
 
     st.header("Q10：春 | Spring")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -946,11 +964,10 @@ def app():
         st.image("spring-2023.png")
      
 
-                                
-                                
-
     st.header("Q11：夏 | Summer")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1037,11 +1054,12 @@ def app():
         st.subheader("2023")
         st.image("summer-2023.png")
     
-
                                 
 
     st.header("Q12：秋 | Autumn")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1128,12 +1146,12 @@ def app():
         st.subheader("2023")
         st.image("autumn-2023.png")
      
-
-                                
-                                
+                     
 
     st.header("Q13：冬 | Winter")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
 
@@ -1223,9 +1241,9 @@ def app():
 
     #!朝(morning)
     st.header("Q14：朝 | Morning")
-
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
@@ -1317,8 +1335,9 @@ def app():
 
     
     st.header("Q15：昼 | Midday")
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -1340,7 +1359,7 @@ def app():
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
-    st.image("afternoon.treemap.bmp")        
+    st.image("midday.png")        
         
     #2022選択時に表示
     if choose_id == '2022':
@@ -1369,7 +1388,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022 All")
-        st.image("afternoon-2022.png")
+        st.image("midday-2022.png")
 
 
     #2023選択時に表示
@@ -1399,16 +1418,14 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("afternoon-2023.png")
-
-
+        st.image("midday-2023.png")
  
                     
                  
     st.header("Q16：夕 | Sunset")
-
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -1492,12 +1509,11 @@ def app():
         st.subheader("2023")
         st.image("sunset-2023.png")
      
-
-
     
     st.header("Q17：夜 | Night")
-
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -1584,6 +1600,8 @@ def app():
                             
     st.header("Q18：好きな色 | Favorite")
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
+        #ALL選択時に表示
+    if choose_id == 'ALL':
     st.subheader("上位選択色")
     col1, col2, col3, col4, col5 = st.columns(5)
 

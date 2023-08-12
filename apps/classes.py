@@ -604,21 +604,21 @@ def app():
     #streamlitで選択色トップ５を表示　！0は無選択としてカウントに入れず（要検討）
         #ALL選択時に表示
     if choose_id == 'ALL':
-    st.subheader("上位選択色")
-        col1, col2, col3, col4 = st.columns(4)
-    
-        with col1:
-            color = st.color_picker('Q7-1', '#A40066')
-            st.write(color)
-        with col2:
-            color = st.color_picker('Q7-2', '#FFFFFF')
-            st.write(color)
-        with col3:
-            color = st.color_picker('Q7-3', '#E4B7FF')
-            st.write(color)
-        with col4:
-            color = st.color_picker('Q7-4', '#87EAFF')
-            st.write(color)
+        st.subheader("上位選択色")
+            col1, col2, col3, col4 = st.columns(4)
+        
+            with col1:
+                color = st.color_picker('Q7-1', '#A40066')
+                st.write(color)
+            with col2:
+                color = st.color_picker('Q7-2', '#FFFFFF')
+                st.write(color)
+            with col3:
+                color = st.color_picker('Q7-3', '#E4B7FF')
+                st.write(color)
+            with col4:
+                color = st.color_picker('Q7-4', '#87EAFF')
+                st.write(color)
 
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")

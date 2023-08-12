@@ -206,7 +206,7 @@ def app():
             st.write(color)
     
         with col5:
-            color = st.color_picker('23-Q1-5', '#FF7F1A)
+            color = st.color_picker('23-Q1-5', '#FF7F1A')
             st.write(color)
 
         #PBIで作成したツリーマップの画像

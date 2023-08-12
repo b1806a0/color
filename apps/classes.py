@@ -118,7 +118,7 @@ def app():
 
         #PBIで作成したツリーマップの画像
         st.subheader("2023")
-        st.image("loveiy-2023.png")
+        st.image("lovely-2023.png")
     
     #streamlit表示
     st.header("Q2：楽しい| Fun")
@@ -187,8 +187,8 @@ def app():
     #2023選択時に表示
     if choose_id == '2023':
         st.subheader("2023 Top Colors")   
+        
         col1, col2, col3, col4, col5 = st.columns(5)
-    
         with col1:
             color = st.color_picker('23-Q1-1', '#FFFF00')
             st.write(color)
@@ -237,7 +237,7 @@ def app():
             color = st.color_picker('Q3-4', '#AD15FF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q3-5', '#QB00FF')
+            color = st.color_picker('Q3-5', '#9B00FF')
             st.write(color)       
 
             

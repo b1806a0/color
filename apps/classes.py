@@ -329,7 +329,7 @@ def app():
             color = st.color_picker('Q4-4', '#463700')
             st.write(color)       
         with col5:
-            color = st.color_picker('Q4-5', '#F8FFE7
+            color = st.color_picker('Q4-5', '#F8FFE7')
             st.write(color)
 
      
@@ -494,7 +494,7 @@ def app():
         #ALL選択時に表示
     if choose_id == 'ALL':
         st.subheader("上位選択色")
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
             color = st.color_picker('Q6-1', '#460076')
@@ -511,9 +511,7 @@ def app():
         with col5:
             color = st.color_picker('Q6-5', '#000032')
             st.write(color)        
-        with col6:
-            color = st.color_picker('Q6-6', '#000000')
-            st.write(color)
+
         
     #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
     st.subheader("トレーニング参加者全体の選択色")
@@ -1126,7 +1124,7 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q13-1', '#')DBDBDB
+            color = st.color_picker('Q13-1', '#DBDBDB')
             st.write(color)
         with col2:
             color = st.color_picker('Q13-2', '#B7F2FF')

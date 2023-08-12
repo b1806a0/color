@@ -530,7 +530,7 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q6-3', '#D300000')
+            color = st.color_picker('22-Q6-3', '#D30000')
             st.write(color)
     
         with col4:

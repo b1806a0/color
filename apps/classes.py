@@ -225,24 +225,24 @@ def app():
     
     
         with col1:
-            color = st.color_picker('Q3-1', '#FF0000')
+            color = st.color_picker('Q3-1', '#FFFF00')
             st.write(color)
         with col2:
-            color = st.color_picker('Q3-2', '#000000')
+            color = st.color_picker('Q3-2', '#FF0000')
             st.write(color)
         with col3:
-            color = st.color_picker('Q3-3', '#A40000')
+            color = st.color_picker('Q3-3', '#000000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q3-4', '#AD15FF')
+            color = st.color_picker('Q3-4', '#A40000')
             st.write(color)
         with col5:
-            color = st.color_picker('Q3-5', '#9B00FF')
+            color = st.color_picker('Q3-5', '#6300A5')
             st.write(color)       
   
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("gorgeous.png")        
+        st.image("goukana_all.png")        
             
         
     #2022選択時に表示
@@ -318,22 +318,22 @@ def app():
             color = st.color_picker('Q4-1', '#DBDBDB')
             st.write(color)
         with col2:
-            color = st.color_picker('Q4-2', '#B2B2B2')
+            color = st.color_picker('Q4-2', '#FFFFFF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q4-3', '#7F7F7F')
+            color = st.color_picker('Q4-3', '#FFF1E7')
             st.write(color)
         with col4:
             color = st.color_picker('Q4-4', '#463700')
             st.write(color)       
         with col5:
-            color = st.color_picker('Q4-5', '#F8FFE7')
+            color = st.color_picker('Q4-5', '#7F7F7F')
             st.write(color)
 
      
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")    
-        st.image("simple.png")
+        st.image("sobokuna_all.png")
         
  
     #2022選択時に表示
@@ -415,15 +415,15 @@ def app():
             color = st.color_picker('Q5-3', '#A38000')
             st.write(color)
         with col4:
-            color = st.color_picker('Q5-4', '#750000')
+            color = st.color_picker('Q5-4', '#003200')
             st.write(color)
         with col5:
-            color = st.color_picker('Q5-4', '#470000')
+            color = st.color_picker('Q5-4', '#014700')
             st.write(color)
         
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料） 
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("tasteful.png") 
+        st.image("ajiwaibukai_all.png") 
 
                    
     #2022選択時に表示
@@ -495,16 +495,16 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q6-1', '#460076')
+            color = st.color_picker('Q6-1', '#460000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q6-2', '#6400A5')
+            color = st.color_picker('Q6-2', '#FFFF00')
             st.write(color)
         with col3:
-            color = st.color_picker('Q6-3', '#650000')
+            color = st.color_picker('Q6-3', '#460076')
             st.write(color)
         with col4:
-            color = st.color_picker('Q6-4', '#2A0047')
+            color = st.color_picker('Q6-4', '#000000')
             st.write(color)
         with col5:
             color = st.color_picker('Q6-5', '#000032')
@@ -513,7 +513,7 @@ def app():
         
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("dignified.png")        
+        st.image("kakucho_all.png")        
             
 
     #2022選択時に表示
@@ -595,12 +595,12 @@ def app():
             color = st.color_picker('Q7-4', '#750049')
             st.write(color)
         with col5:
-            color = st.color_picker('Q7-5', '#A40000')
+            color = st.color_picker('Q7-5', '#FFFFFF')
             st.write(color)
             
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("graceful.png")    
+        st.image("yuuga_all.png")    
         
 
    #2022選択時に表示
@@ -677,19 +677,19 @@ def app():
             color = st.color_picker('Q8-2', '#750049')
             st.write(color)
         with col3:
-            color = st.color_picker('Q8-3', '#6300A5')
+            color = st.color_picker('Q8-3', '#FFFFFF')
             st.write(color)
         with col4:
             color = st.color_picker('Q8-4', '#320065')
             st.write(color)
         with col5:
-            color = st.color_picker('Q8-5', '#9B00FF')
+            color = st.color_picker('Q8-5', '#6300A5')
             st.write(color)                                   
 
                                 
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("elegant.png") 
+        st.image("kihin_all.png") 
 
 
     #2022選択時に表示
@@ -765,22 +765,22 @@ def app():
             color = st.color_picker('Q9-1', '#000000')
             st.write(color)
         with col2:
-            color = st.color_picker('Q9-2', '#0000FF')
+            color = st.color_picker('Q9-2', '#FFFFFF')
             st.write(color)
         with col3:
-            color = st.color_picker('Q9-3', '#0000D5')
+            color = st.color_picker('Q9-3', '#0000FF')
             st.write(color)
         with col4:
-            color = st.color_picker('Q9-4', '#323232')
+            color = st.color_picker('Q9-4', '#FF0000')
             st.write(color)                            
         with col5:
-            color = st.color_picker('Q9-5', '#58B1FF')
+            color = st.color_picker('Q9-5', '#0000D5')
             st.write(color) 
      
        
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("reasonable.png")
+        st.image("gouriteki_all.png")
             
         
     #2022選択時に表示
@@ -1123,25 +1123,25 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q13-1', '#DBDBDB')
+            color = st.color_picker('Q13-1', '#FFFFFF')
             st.write(color)
         with col2:
-            color = st.color_picker('Q13-2', '#B7F2FF')
+            color = st.color_picker('Q13-2', '#DBDBDB')
             st.write(color)
         with col3:
-            color = st.color_picker('Q13-3', '#BBDEFF')
+            color = st.color_picker('Q13-3', '#B7F2FF')
             st.write(color)
         with col4:
-            color = st.color_picker('Q13-4', '#000347')
+            color = st.color_picker('Q13-4', '#E7FBFF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q13-5', '#0055A4')
+            color = st.color_picker('Q13-5', '#B8DEFF')
             st.write(color)   
    
         
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")    
-        st.image("winter.png")
+        st.image("fuyu_all.png")
             
         
     #2022選択時に表示
@@ -1574,24 +1574,24 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('Q18-1', '#000000')
+            color = st.color_picker('Q18-1', '#FFFFFF')
             st.write(color)
         with col2:
-            color = st.color_picker('Q18-2', '#B7F2FF')
+            color = st.color_picker('Q18-2', '#000000')
             st.write(color)
         with col3:
-            color = st.color_picker('Q18-3', '#B8DEFF')
+            color = st.color_picker('Q18-3', '#FFB8E6')
             st.write(color)
         with col4:
-            color = st.color_picker('Q18-4', '#88C8FF')
+            color = st.color_picker('Q18-4', '#E4B7FF')
             st.write(color)
         with col5:
-            color = st.color_picker('Q18-5', '#B9BFFF')
+            color = st.color_picker('Q18-5', '#B7F2FF')
             st.write(color) 
 
         #flourishで作成したツリーマップの画像（より詳しいアニメーションは有料）
         st.subheader("トレーニング参加者全体の選択色")
-        st.image("favorite.png") 
+        st.image("favorite_all.png") 
 
 
     

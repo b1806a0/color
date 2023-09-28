@@ -259,20 +259,20 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q3-3', '#FF00A2')
+            color = st.color_picker('22-Q3-3', '#000000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q3-4', '#000000')
+            color = st.color_picker('22-Q3-4', '#FF00A2')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q3-5', '#D30000')
+            color = st.color_picker('22-Q3-5', '#650000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("gorgeous-2022.png")
+        st.image("gorgeous2022.png")
 
 
     #2023選択時に表示
@@ -432,28 +432,28 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('22-Q5-1', '#A35C00')
+            color = st.color_picker('22-Q5-1', '#A2A300')
             st.write(color)
     
         with col2:
-            color = st.color_picker('22-Q5-2', '#A2A300')
+            color = st.color_picker('22-Q5-2', '#A35C00')
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q5-3', '#FF0000')
+            color = st.color_picker('22-Q5-3', '#650000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q5-4', '#D35000')
+            color = st.color_picker('22-Q5-4', '#A38000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q5-5', '#D37600')
+            color = st.color_picker('22-Q5-5', '#A43E00')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("tasteful-2022.png")
+        st.image("tasteful2022.png")
 
 
     #2023選択時に表示
@@ -530,20 +530,20 @@ def app():
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q6-3', '#D30000')
+            color = st.color_picker('22-Q6-3', '#650000')
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q6-4', '#A40000')
+            color = st.color_picker('22-Q6-4', '#750000')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q6-5', '#650000')
+            color = st.color_picker('22-Q6-5', '#A40000')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("dignified-2022.png")
+        st.image("dignified2022.png")
 
 
     #2023選択時に表示
@@ -698,28 +698,28 @@ def app():
         col1, col2, col3, col4, col5 = st.columns(5)
     
         with col1:
-            color = st.color_picker('22-Q8-1', '#460076')
+            color = st.color_picker('22-Q8-1', '#FFFFFF')
             st.write(color)
     
         with col2:
-            color = st.color_picker('22-Q8-2', '#BF55FF')
+            color = st.color_picker('22-Q8-2', '#460076')
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q8-3', '#750049')
+            color = st.color_picker('22-Q8-3', '#320065')
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q8-4', '#320065')
+            color = st.color_picker('22-Q8-4', '#750049')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q8-5', '#FFFFB5')
+            color = st.color_picker('22-Q8-5', '#BF55FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022")
-        st.image("elegant-2022.png")
+        st.image("elegant2022.png")
 
 
     #2023選択時に表示
@@ -801,16 +801,16 @@ def app():
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q9-4', '#FFFFFF')
+            color = st.color_picker('22-Q9-4', '#0085FF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q9-5', '#FFFF00')
+            color = st.color_picker('22-Q9-5', '#7F7F7F')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
         st.subheader("2022 All")
-        st.image("reasonable-2022.png")
+        st.image("reasonable2022.png")
 
 
     #2023選択時に表示
@@ -1605,19 +1605,19 @@ def app():
             st.write(color)
     
         with col2:
-            color = st.color_picker('22-Q18-2', '#FFB8E6')
+            color = st.color_picker('22-Q18-2', '#FFFFFF')
             st.write(color)
     
         with col3:
-            color = st.color_picker('22-Q18-3', '#E4B7FF')
+            color = st.color_picker('22-Q18-3', '#FFBBE6')
             st.write(color)
     
         with col4:
-            color = st.color_picker('22-Q18-4', '#89BFFF')
+            color = st.color_picker('22-Q18-4', '#E4B7FF')
             st.write(color)
     
         with col5:
-            color = st.color_picker('22-Q18-5', '#88C8FF')
+            color = st.color_picker('22-Q18-5', '#55E1FF')
             st.write(color)
 
         #PBIで作成したツリーマップの画像
